@@ -1,4 +1,4 @@
-import checkIngredients from '../src/modules/IngredientChecker';
+import { checkIngredients } from '../src/modules/IngredientChecker'
 
 test('should contain flagged ingredients but NO non-vegan ingredients', () => {
   expect(checkIngredients(['biotin', 'glycine', 'soy', 'garlic'])).toEqual(
@@ -6,8 +6,8 @@ test('should contain flagged ingredients but NO non-vegan ingredients', () => {
       nonvegan: [],
       flagged: ['biotin', 'glycine']
     })
-  );
-});
+  )
+})
 
 test('should NOT contain flagged ingredients but non-vegan ingredients', () => {
   expect(checkIngredients(['beef', 'pork', 'soy', 'garlic'])).toEqual(
@@ -15,8 +15,8 @@ test('should NOT contain flagged ingredients but non-vegan ingredients', () => {
       nonvegan: ['beef', 'pork'],
       flagged: []
     })
-  );
-});
+  )
+})
 
 test('should contain flagged and non-vegan ingredients', () => {
   expect(
@@ -26,5 +26,5 @@ test('should contain flagged and non-vegan ingredients', () => {
       nonvegan: ['beef', 'pork'],
       flagged: ['glycine', 'biotin']
     })
-  );
-});
+  )
+})

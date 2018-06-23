@@ -1,4 +1,4 @@
-import nonVeganList from '../util/nonvegan.json';
+import nonVeganList from '../util/nonvegan.json'
 
 /**
  * This functions takes the given ingredient
@@ -8,11 +8,11 @@ import nonVeganList from '../util/nonvegan.json';
  */
 export function isVeganIngredient (ingredientToCheck) {
   // true if empty
-  if (ingredientToCheck.length === 0) return true;
+  if (ingredientToCheck.length === 0) return true
 
-  const formattedIngredientToCheck = ingredientToCheck.trim().toLowerCase();
+  const formattedIngredientToCheck = ingredientToCheck.trim().toLowerCase()
 
-  return !nonVeganList.includes(formattedIngredientToCheck);
+  return !nonVeganList.includes(formattedIngredientToCheck)
 }
 
 /**
@@ -22,7 +22,7 @@ export function isVeganIngredient (ingredientToCheck) {
  * @return <code>true</code> if ingredients are not in nonVeganList
  */
 export function isVeganIngredientList (ingredientsToCheck) {
-  return !ingredientsToCheck.some(ingredient => !isVeganIngredient(ingredient));
+  return !ingredientsToCheck.some(ingredient => !isVeganIngredient(ingredient))
 }
 
 /**
@@ -34,5 +34,5 @@ export function isVeganIngredientList (ingredientsToCheck) {
 export function containsNonVeganIngredients (ingredientsToCheck) {
   return ingredientsToCheck.filter(
     ingredient => !isVeganIngredient(ingredient)
-  );
+  )
 }

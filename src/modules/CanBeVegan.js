@@ -1,4 +1,4 @@
-import flaggedList from '../util/canbevegan.json';
+import flaggedList from '../util/canbevegan.json'
 
 /**
  * This functions takes the given ingredient
@@ -8,11 +8,11 @@ import flaggedList from '../util/canbevegan.json';
  */
 export function isFlaggedIngredient (ingredientToCheck) {
   // true if empty
-  if (ingredientToCheck.length === 0) return true;
+  if (ingredientToCheck.length === 0) return true
 
-  const formattedIngredientToCheck = ingredientToCheck.trim().toLowerCase();
+  const formattedIngredientToCheck = ingredientToCheck.trim().toLowerCase()
 
-  return flaggedList.includes(formattedIngredientToCheck);
+  return flaggedList.includes(formattedIngredientToCheck)
 }
 
 /**
@@ -24,5 +24,5 @@ export function isFlaggedIngredient (ingredientToCheck) {
 export function containsFlaggedIngredients (ingredientsToCheck) {
   return ingredientsToCheck.filter(ingredient =>
     isFlaggedIngredient(ingredient)
-  );
+  )
 }
