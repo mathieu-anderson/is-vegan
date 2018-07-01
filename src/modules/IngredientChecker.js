@@ -1,5 +1,6 @@
 import { containsNonVeganIngredients } from './IsVegan'
 import { containsFlaggedIngredients } from './CanBeVegan'
+import { isNotInLists } from './Other'
 
 /**
  * This functions takes a given list of ingredients
@@ -12,7 +13,8 @@ export function checkIngredients (ingredientsToCheck) {
     // check non vegan ingredient
     nonvegan: containsNonVeganIngredients(ingredientsToCheck),
     // check flagged ingredient
-    flagged: containsFlaggedIngredients(ingredientsToCheck)
+    flagged: containsFlaggedIngredients(ingredientsToCheck),
+    other: isNotInLists(ingredientsToCheck)
   }
   return filteredElements
 }

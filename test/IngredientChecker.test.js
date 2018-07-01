@@ -4,7 +4,8 @@ test('should contain flagged ingredients but NO non-vegan ingredients', () => {
   expect(checkIngredients(['biotin', 'glycine', 'soy', 'garlic'])).toEqual(
     expect.objectContaining({
       nonvegan: [],
-      flagged: ['biotin', 'glycine']
+      flagged: ['biotin', 'glycine'],
+      other: ['soy', 'garlic']
     })
   )
 })
@@ -13,7 +14,8 @@ test('should NOT contain flagged ingredients but non-vegan ingredients', () => {
   expect(checkIngredients(['beef', 'pork', 'soy', 'garlic'])).toEqual(
     expect.objectContaining({
       nonvegan: ['beef', 'pork'],
-      flagged: []
+      flagged: [],
+      other: ['soy', 'garlic']
     })
   )
 })
@@ -24,7 +26,8 @@ test('should contain flagged and non-vegan ingredients', () => {
   ).toEqual(
     expect.objectContaining({
       nonvegan: ['beef', 'pork'],
-      flagged: ['glycine', 'biotin']
+      flagged: ['glycine', 'biotin'],
+      other: ['soy', 'garlic']
     })
   )
 })
