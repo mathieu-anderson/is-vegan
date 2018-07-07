@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.org/hmontazeri/is-vegan.svg?branch=master)](https://travis-ci.org/hmontazeri/is-vegan) [![npm version](https://badge.fury.io/js/is-vegan.svg)](https://badge.fury.io/js/is-vegan) [![codecov](https://codecov.io/gh/hmontazeri/is-vegan/branch/master/graph/badge.svg)](https://codecov.io/gh/hmontazeri/is-vegan) [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
+> This is a fork of https://github.com/hmontazeri/is-vegan adding support for the `other` category on top of `nonvegan` and `flagged`.
+
 # is-vegan
 
 Is-Vegan helps you to find out which food ingredients are vegan / non-vegan. It can answer that on 1 ingredient or on a list of ingredients. It uses a 850+ entries list of non-vegan ingredients.
