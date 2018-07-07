@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/hmontazeri/is-vegan.svg?branch=master)](https://travis-ci.org/hmontazeri/is-vegan) [![npm version](https://badge.fury.io/js/is-vegan.svg)](https://badge.fury.io/js/is-vegan) [![codecov](https://codecov.io/gh/hmontazeri/is-vegan/branch/master/graph/badge.svg)](https://codecov.io/gh/hmontazeri/is-vegan) [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
-> This is a fork of https://github.com/hmontazeri/is-vegan adding support for the `other` category on top of `nonvegan` and `flagged`.
+> This is a fork of https://github.com/hmontazeri/is-vegan adding support for the `other` category on top of `nonvegan` and `flagged` and fixing some build issue. Documentation might not be 100% accurate.
 
 # is-vegan
 
